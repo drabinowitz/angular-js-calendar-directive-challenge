@@ -1,1 +1,22 @@
-/* your css code goes here */
+body {
+
+	width: 100%;
+
+}
+
+.calendarBody{
+
+	width : 100%;
+
+}
+
+.calendarCell{
+
+	display : inline-block;
+	width : 14.285%;
+	height: 50px;
+	border : 1px solid black;
+	box-sizing : border-box;
+	margin: 0;
+
+}

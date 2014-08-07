@@ -1,5 +1,17 @@
-<div class="calendarCell" ng-repeat="day in days">
-	
-	<p>{{ day.day }}</p>
+<div class="calendarBody">
+
+	<div class="calendarNav" calendar-nav>
+
+		<select ng-model="selectedMonth" class="months" ng-options="month for month in months"></select>
+
+		<select ng-model="selectedYear" class="years" ng-options="year for year in years"></select>
+
+	</div>
+
+	<div class="calendarCell" ng-repeat="day in days">
+		
+		<p>{{ day.day }}</p>
+
+	</div>
 
 </div>
