@@ -60,6 +60,12 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('production', function() {
+  connect.server({
+    root: 'build/'
+  });
+});
+
 // Default Task
 gulp.task('default', ['connect']);
 gulp.task('build', ['copy-html-files', 'usemin']);
