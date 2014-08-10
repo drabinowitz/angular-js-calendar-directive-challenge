@@ -1,6 +1,6 @@
 angular.module('calendarDemoApp', []).
 
-factory('calendarRange',function(){
+/*factory('calendarRange',function(){
 
 	return {
 
@@ -12,9 +12,9 @@ factory('calendarRange',function(){
 
 	};
 
-}).
+}).*/
 
-controller('calendarCtrl',['$scope','calendarRange',function($scope,calendarRange){
+controller('calendarCtrl',['$scope',function($scope){
 
 	var monthlyRange = {};
 
@@ -28,7 +28,7 @@ controller('calendarCtrl',['$scope','calendarRange',function($scope,calendarRang
 
 		// $scope.$apply(function(){
 
-		monthlyRange = calendarRange.getMonthlyRange( date );
+		monthlyRange = CalendarRange.getMonthlyRange( date );
 
 		$scope.days = monthlyRange.days;
 
